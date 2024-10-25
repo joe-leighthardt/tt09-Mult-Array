@@ -19,8 +19,8 @@ module tt_um_array_mult_joe_leighthardt (
   // All output pins must be assigned. If not used, assign to 0.
 
     );
-    wire [3:0] m;
-    wire [3:0] q;
+    wire [3:0] m = ui_in[7:4];
+    wire [3:0] q = ui_in[3:0];
     wire [7:0] p;
     wire [3:0] pp0;
     wire [3:0] pp1;
@@ -45,8 +45,8 @@ module tt_um_array_mult_joe_leighthardt (
     wire intsig17;
     
 
-    assign m = ui_in[7:4];
-    assign q = ui_in[3:0];
+    
+    
     assign pp0 = {m[3]&q[0],m[2]&q[0],m[1]&q[0],m[0]&q[0]};
     assign pp1 = {m[3]&q[1],m[2]&q[1],m[1]&q[1],m[0]&q[1]};
     assign pp2 = {m[3]&q[2],m[2]&q[2],m[1]&q[2],m[0]&q[2]};
@@ -81,7 +81,7 @@ output carry_out
     );
     
    
-    wire int_sig1, int_sig2,int_sig3,int_sig4,int_sig5;
+    wire int_sig1, int_sig2,int_sig3,int_sig4,int_sig5,int_sig6,int_sig7,int_sig8;
     assign int_sig1 = x & ~y;
     assign int_sig2 = ~x & y;
     assign int_sig3 = int_sig1 + int_sig2;
