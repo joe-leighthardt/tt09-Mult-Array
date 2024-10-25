@@ -13,20 +13,36 @@ module tt_um_array_mult_joe_leighthardt (
     output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
     input  wire       ena,      // always 1 when the design is powered, so you can ignore it
     input  wire       clk,      // clock
-    input  wire       rst_n,     // reset_n - low to reset
-    wire [3:0] m,
-    wire [3:0] q,
-    wire [7:0] p,
-    wire [3:0] pp0,
-    wire [3:0] pp1,
-    wire [3:0] pp2,
-    wire [3:0] pp3,
-    wire intsig1,intsig2,intsig3,intsig4,intsig5,intsig6,intsig7,intsig8,intsig9,intsig10,intsig11,intsig12,intsig13,intsig14,intsig15,intsig16,intsig17
+    input  wire       rst_n     // reset_n - low to reset
+    
 
   // All output pins must be assigned. If not used, assign to 0.
 
     );
-
+    wire [3:0] m;
+    wire [3:0] q;
+    wire [7:0] p;
+    wire [3:0] pp0;
+    wire [3:0] pp1;
+    wire [3:0] pp2;
+    wire [3:0] pp3;
+    wire intsig1;
+    wire intsig2;
+    wire intsig3;
+    wire intsig4;
+    wire intsig5;
+    wire intsig6;
+    wire intsig7;
+    wire intsig8;
+    wire intsig9;
+    wire intsig10;
+    wire intsig11;
+    wire intsig12;
+    wire intsig13;
+    wire intsig14;
+    wire intsig15;
+    wire intsig16;
+    wire intsig17;
     
 
     assign m = ui_in[7:4];
