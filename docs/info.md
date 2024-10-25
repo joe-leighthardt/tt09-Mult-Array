@@ -9,11 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Takes in one 8bit binary array and breaks it into two 4bit arrays. It then multiplies these arrays by each other.
+
 
 ## How to test
 
-Explain how to use your project
+Use various numbers to test the multiplicative values.
 
 ## External hardware
 
